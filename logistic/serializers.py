@@ -1,5 +1,6 @@
 from rest_framework import serializers
 
+
 from logistic.models import Product, StockProduct, Stock
 
 
@@ -13,8 +14,6 @@ class ProductPositionSerializer(serializers.ModelSerializer):
     class Meta:
         model = StockProduct
         fields = ['product', 'quantity', 'price']
-
-
 
 
 class StockSerializer(serializers.ModelSerializer):
