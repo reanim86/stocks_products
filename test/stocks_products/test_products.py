@@ -7,4 +7,4 @@ from rest_framework.test import APIClient
 def test_api():
     client = APIClient()
     response = client.get('/api/v1/products/')
-    assert response.status_code==200
+    assert response.status_code == 200
